@@ -47,8 +47,8 @@ function calculateRecommendedRate(distance) {
     const MAX_RATE = 9; // Maximum rate per km
     
     // Parameters for the exponential decay
-    const DECAY_FACTOR = 0.005; // Controls how quickly the rate drops
-    const MIDPOINT = 50; // Distance at which we want rate to be closer to maximum
+    const DECAY_FACTOR = 0.007; // Controls how quickly the rate drops
+    const MIDPOINT = 40; // Distance at which we want rate to be closer to maximum
     
     // Calculate the rate using exponential decay
     const decayComponent = Math.exp(-DECAY_FACTOR * (distance - MIDPOINT));
@@ -100,10 +100,12 @@ async function updateDistance() {
             // Calculate min and max prices
             const minPrice = Math.round(distance * 3); // 3 DA per km
             const maxPrice = Math.round(distance * 9); // 9 DA per km
-            
-            // Calculate recommended price
+                        // Calculate recommended price
             const recommendedRate = calculateRecommendedRate(distance);
-            const recommendedPrice = Math.round(distance * recommendedRate);
+            const exactPrice = distance * recommendedRate;
+            // Round to nearest hundred
+            const recommendedPrice = Math.round(exactPrice / 100) * 100;
+
             
             minPriceSpan.textContent = `${minPrice.toLocaleString()} دج`;
             maxPriceSpan.textContent = `${maxPrice.toLocaleString()} دج`;
