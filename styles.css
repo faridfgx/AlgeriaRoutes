@@ -150,6 +150,16 @@ select:focus {
     font-size: 14px;
 }
 
+.attribution {
+    text-align: center;
+    margin-top: 15px;
+    color: #666;
+    font-size: 12px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.02);
+    border-radius: 6px;
+}
+
 .price-info {
     background: rgba(255, 255, 255, 0.6);
     border-radius: 8px;
