@@ -3,68 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>حاسبة المسافات بين الولايات</title>
+    <meta name="description" content="حاسبة المسافات بين ولايات الجزائر - احسب المسافة والوقت التقريبي للسفر">
+    <meta name="theme-color" content="#3498db">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="حاسبة المسافات">
+    
+    <!-- PWA Support -->
+    <link rel="manifest" href="/manifest.json">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="apple-touch-icon" href="icons/icon-152x152.png">
+    
+    <!-- Main Stylesheet -->
     <link rel="stylesheet" href="styles.css">
+    
+    <title>حاسبة المسافات بين الولايات</title>
 </head>
 <body>
     <div class="container">
-        <h1>حاسبة المسافات بين الولايات</h1>
-        
-        <div class="form-group">
-            <label for="wilaya1">الولاية الأولى</label>
-            <select id="wilaya1">
-                <option value="">اختر الولاية الأولى</option>
-            </select>
-        </div>
+        <header>
+            <h1>حاسبة المسافات بين الولايات</h1>
+            <p class="subtitle">احسب المسافة، الوقت، والتكلفة التقريبية للتنقل بين ولايات الجزائر</p>
+        </header>
 
-        <div class="form-group">
-            <label for="wilaya2">الولاية الثانية</label>
-            <select id="wilaya2">
-                <option value="">اختر الولاية الثانية</option>
-            </select>
-        </div>
-
-        <div id="loading" class="loading">
-            <div class="spinner"></div>
-            <p>جاري حساب المسافة...</p>
-        </div>
-
-        <div id="result" class="result">
-            <p>المسافة بين <span id="start-wilaya"></span> و <span id="end-wilaya"></span> هي:</p>
-            <div class="distance">
-                <span id="distance-value"></span> كم
-                <div class="time-estimate">
-                    المدة التقريبية: <span id="time-value">-- ساعة و -- دقيقة</span>
+        <main>
+            <!-- Calculator Form -->
+            <form id="distance-form" class="calculator-form">
+                <div class="form-group">
+                    <label for="wilaya1">ولاية الانطلاق</label>
+                    <select id="wilaya1" name="wilaya1" required aria-required="true">
+                        <option value="">اختر ولاية الانطلاق</option>
+                    </select>
                 </div>
+
+                <button type="button" id="swap-button" class="swap-button" aria-label="تبديل الولايات">
+                    <span class="swap-icon" aria-hidden="true">↑↓</span>
+                </button>
+
+                <div class="form-group">
+                    <label for="wilaya2">ولاية الوصول</label>
+                    <select id="wilaya2" name="wilaya2" required aria-required="true">
+                        <option value="">اختر ولاية الوصول</option>
+                    </select>
+                </div>
+            </form>
+
+            <!-- Loading State -->
+            <div id="loading" class="loading" role="status" aria-hidden="true">
+                <div class="spinner"></div>
+                <p>جاري حساب المسافة...</p>
             </div>
-            <div class="price-info">
-			    <div class="price-row recommended">
-                    <span>السعر المقترح:</span>
-                    <span class="price" id="recommended-price">-- دج</span>
-                </div>
-                <div class="price-row">
-                    <span>السعر الأدنى (3 دج/كم):</span>
-                    <span class="price" id="min-price">-- دج</span>
-                </div>
 
-                <div class="price-row">
-                    <span>السعر الأقصى (9 دج/كم):</span>
-                    <span class="price" id="max-price">-- دج</span>
+            <!-- Results Section -->
+            <section id="result" class="result" aria-live="polite">
+                <h2 class="result-title">نتيجة البحث</h2>
+                <div class="result-content">
+                    <p class="route-info">
+                      <span class="route-info-text">
+                           المسافة بين <span id="start-wilaya"></span> و <span id="end-wilaya"></span> هي:
+                           </span>
+                    </p>
+                    
+                    <div class="distance">
+                        <span id="distance-value"></span> كم
+                        <div class="time-estimate">
+                            المدة التقريبية: <span id="time-value">-- ساعة و -- دقيقة</span>
+                        </div>
+                    </div>
+
+                    <div class="price-info">
+                        <div class="price-row recommended">
+                            <span>السعر المقترح:</span>
+                            <span class="price" id="recommended-price">-- دج</span>
+                        </div>
+                        <div class="price-row">
+                            <span>السعر الأدنى:</span>
+                            <span class="price" id="min-price">-- دج</span>
+                        </div>
+                        <div class="price-row">
+                            <span>السعر الأقصى:</span>
+                            <span class="price" id="max-price">-- دج</span>
+                        </div>
+                    </div>
+
+                    <div class="actions">
+                        <button type="button" id="share-button" class="action-button">
+                            <span class="icon">🔗</span> مشاركة
+                        </button>
+                        <button type="button" id="print-button" class="action-button">
+                            <span class="icon">🖨️</span> طباعة
+                        </button>
+                        <button type="button" id="save-button" class="action-button">
+                            <span class="icon">⭐</span> حفظ
+                        </button>
+                    </div>
+
+                    <p class="note">* المسافة و الأسعار التقريبية عبر الطرق الرئيسية</p>
                 </div>
+            </section>
+
+            <!-- Recent Searches Section -->
+            <section id="recent-searches" class="recent-searches" aria-label="عمليات البحث الأخيرة">
+                <!-- Will be populated by JavaScript -->
+            </section>
+
+            <!-- Saved Routes Section -->
+            <section id="saved-routes" class="saved-routes" aria-label="المسارات المحفوظة">
+                <!-- Will be populated by JavaScript -->
+            </section>
+
+            <!-- Error Messages -->
+            <div id="error" class="error" role="alert"></div>
+        </main>
+
+        <footer>
+            <!-- Offline Notice -->
+            <div class="additional-info">
+                <p class="offline-notice" id="offline-notice" hidden>
+                    🟡 أنت حاليا في وضع غير متصل. بعض الميزات قد لا تعمل.
+                </p>
             </div>
-            <p class="note">المسافة و الأسعار التقريبية عبر الطرق الرئيسية</p>
-        </div>
-
-        <div id="error" class="error"></div>
-        
-        <div class="signature">
-            By Farid MEZANE
-        </div>
-        <div class="attribution">
-            © openrouteservice.org by HeiGIT | Map data © OpenStreetMap contributors
-        </div>
+            
+            <!-- Attribution -->
+            <div class="signature">
+               By Farid MEZANE
+            </div>
+            
+            <div class="attribution">
+                © openrouteservice.org by HeiGIT | Map data © OpenStreetMap contributors
+            </div>
+        </footer>
     </div>
+
+    <!-- Service Worker Registration -->
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js')
+                    .then(registration => {
+                        console.log('ServiceWorker registered:', registration);
+                    })
+                    .catch(error => {
+                        console.log('ServiceWorker registration failed:', error);
+                    });
+            });
+        }
+    </script>
+
+    <!-- App Scripts -->
     <script src="wilayaData.js"></script>
+    <script src="utils.js" type="module"></script>
     <script src="app.js"></script>
 </body>
 </html>
