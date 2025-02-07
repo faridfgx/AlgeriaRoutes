@@ -659,3 +659,29 @@ footer {
         border: 1px solid currentColor;
     }
 }
+/* RTL Select Fixes */
+select {
+    text-align: right;
+    padding-right: 1rem !important;
+    padding-left: 2rem !important;
+    background-position: left 0.75rem center !important;
+}
+
+/* Mobile RTL Specific Adjustments */
+@media (max-width: 480px) {
+    select {
+        text-align: right;
+        direction: rtl;
+    }
+    
+    .form-group {
+        direction: rtl;
+    }
+    
+    /* Ensure dropdown arrow is on the left */
+    select {
+        background-position: left 0.75rem center !important;
+        padding-right: 1rem !important;
+        padding-left: 2rem !important;
+    }
+}
