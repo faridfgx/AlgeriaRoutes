@@ -757,20 +757,60 @@ function createRouteInfoTable(wilaya1, wilaya2) {
 // Helper function to add external links
 function addExternalLinks(container, bbox, coords1, coords2) {
     const links = `
-        <div style="text-align: right; margin-top: 8px;">
-            <a href="https://www.openstreetmap.org/?bbox=${bbox}&layer=mapnik" 
-               target="_blank" 
-               style="color: #0078A8; text-decoration: none;">
-               👁️ عرض على OpenStreetMap
-            </a>
-        </div>
-        <div style="text-align: right; margin-top: 8px;">
-            <a href="https://www.google.com/maps/dir/${coords1[0]},${coords1[1]}/${coords2[0]},${coords2[1]}" 
-               target="_blank" 
-               style="color: #0078A8; text-decoration: none;">
-               🗺️ عرض في خرائط Google
-            </a>
-        </div>
+<div style="
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+    margin-top: 12px;
+    width: 100%;
+    text-align: right !important;
+">
+    <a href="https://www.openstreetmap.org/?bbox=${bbox}&layer=mapnik" 
+       target="_blank" 
+       style="
+           display: inline-block !important;
+           text-align: right !important;
+           padding: 10px 16px;
+           background-color: #f0f8ff;
+           color: #0078A8;
+           text-decoration: none;
+           font-weight: bold;
+           border-radius: 6px;
+           transition: background-color 0.3s, transform 0.2s;
+           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+           width: fit-content;
+           direction: rtl;
+           margin-left: auto !important;
+       "
+       onmouseover="this.style.backgroundColor='#e6f4ff'; this.style.transform='scale(1.05)';"
+       onmouseout="this.style.backgroundColor='#f0f8ff'; this.style.transform='scale(1)';">
+       👁️ عرض على OpenStreetMap
+    </a>
+
+    <a href="https://www.google.com/maps/dir/${coords1[0]},${coords1[1]}/${coords2[0]},${coords2[1]}" 
+       target="_blank" 
+       style="
+           display: inline-block !important;
+           text-align: right !important;
+           padding: 10px 16px;
+           background-color: #f0f8ff;
+           color: #0078A8;
+           text-decoration: none;
+           font-weight: bold;
+           border-radius: 6px;
+           transition: background-color 0.3s, transform 0.2s;
+           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+           width: fit-content;
+           direction: rtl;
+           margin-left: auto !important;
+       "
+       onmouseover="this.style.backgroundColor='#e6f4ff'; this.style.transform='scale(1.05)';"
+       onmouseout="this.style.backgroundColor='#f0f8ff'; this.style.transform='scale(1)';">
+       🗺️ عرض في خرائط Google
+    </a>
+</div>
+
     `;
     container.insertAdjacentHTML('beforeend', links);
 }
