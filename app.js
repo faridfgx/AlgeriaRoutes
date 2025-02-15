@@ -1,1 +1,903 @@
-function _0x8b9c(){const _0x15a083=['body','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h3>عمليات\x20البحث\x20الأخيرة</h3>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','map','notification-styles','11671368KJgHkp','&start=','result','getElementById','saved-routes','distanceCache','createDocumentFragment','offline','afterend','أنت\x20الآن\x20في\x20وضع\x20غير\x20متصل','contains','textContent','entries','message','info','exp','الآن','print','setItem','maxItems','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22route-item\x22\x20data-from=\x22','42980SLHgtd','attempts-display','length','updateUI','duration','return\x20(function()\x20','typicalMax','display','تم\x20نسخ\x20النص','_storageKey','map-button','properties','location','maxDistance','\x0a\x20\x20\x20\x20\x20\x20\x20\x20','getItem','toggle','API\x20Error:','getElem','increment','share-button','wilaya1','coordinates','المسافة\x20بين\x20','className','requestLimit','distance-value','</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20','&end=','save-button','features','search','div','typicalMin','writeText','.recent-item','dataset','swap-button','none','تبقى\x20','\x0a.notification\x20{\x0a\x20\x20\x20\x20position:\x20fixed;\x0a\x20\x20\x20\x20bottom:\x2020px;\x0a\x20\x20\x20\x20left:\x2050%;\x0a\x20\x20\x20\x20transform:\x20translateX(-50%);\x0a\x20\x20\x20\x20background:\x20rgba(0,\x200,\x200,\x200.8);\x0a\x20\x20\x20\x20color:\x20white;\x0a\x20\x20\x20\x20padding:\x2012px\x2024px;\x0a\x20\x20\x20\x20border-radius:\x208px;\x0a\x20\x20\x20\x20z-index:\x201000;\x0a\x20\x20\x20\x20animation:\x20fadeInOut\x203s\x20ease;\x0a}\x0a\x0a@keyframes\x20fadeInOut\x20{\x0a\x20\x20\x20\x200%\x20{\x20opacity:\x200;\x20transform:\x20translate(-50%,\x2020px);\x20}\x0a\x20\x20\x20\x2015%\x20{\x20opacity:\x201;\x20transform:\x20translate(-50%,\x200);\x20}\x0a\x20\x20\x20\x2085%\x20{\x20opacity:\x201;\x20transform:\x20translate(-50%,\x200);\x20}\x0a\x20\x20\x20\x20100%\x20{\x20opacity:\x200;\x20transform:\x20translate(-50%,\x20-20px);\x20}\x0a}\x0a','ceil','\x22\x20data-to=\x22','change','SHORT','\x20ساعة','\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22route-info\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22route-cities\x22>','حاسبة\x20المسافات\x20بين\x20الولايات','splice','\x20هي\x20','\x20دقيقة\x20و\x20','init','تم\x20إزالة\x20المسار\x20من\x20المحفوظات','598416ZfkHrB','2956064tBhuWy','parse','hidden','max-price','تم\x20حفظ\x20المسار','6815916QxERbW','end-wilaya','287489vRxpyY','Saved\x20routes\x20save\x20error:','remaining-attempts','5b3ce3597851110001cf62486bcb783b711d46cbaaa5196c2c053ee6','(((.+)+)+)+$','set','.route-item','push','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h3>المسارات\x20المحفوظة</h3>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20','المحاولات\x20المتبقية:\x20','min','head','log','DOMContentLoaded','stringify','max','join','href','\x20ثانية','table','warn','timeWindowMinutes','MEDIUM','291GDkKIt','sort','click','https://www.google.com/maps/dir/?api=1&origin=','_blank','from','appendChild','onLine','show','filter','savedRoutes','add','\x20دج','5213900Twddmf','ORS_API_URL','createElement','\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22recent-item\x22\x20data-from=\x22','addEventListener','\x20يوم','round','\x20و\x20','&travelmode=driving','value','No\x20route\x20summary\x20found\x20in\x20response','open','floor','\x20دقيقة','_cleanupOldRequests','console','distance-calc-offline-v1','error','maxRate','offline-notice','timestamp','get','apply','getTimeUntilReset','has','keys','share','block','Recent\x20searches\x20save\x20error:','__proto__','remove-saved','_saveToStorage','insertAdjacentElement','forEach','exception','constructor','Cache\x20initialization\x20error:','ors_api_usage','يرجى\x20اختيار\x20ولايتين\x20أولاً','distance-form','getRemaining','unshift','_generateKey','prototype','تم\x20استعادة\x20الاتصال\x20بالإنترنت','wilaya2','json','minRate','\x20كم</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22route-time\x22>','recommended-price','_getRequests','now','يرجى\x20اختيار\x20ولايتين\x20مختلفتين','</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span\x20class=\x22route-distance\x22>','toString','منذ\x20','Recent\x20searches\x20retrieval\x20error:','Cache\x20save\x20error:','Saved\x20routes\x20retrieval\x20error:','loading','\x20قبل\x20المحاولة\x20مرة\x20أخرى.','start-wilaya','fromEntries','canMakeRequest','catch','classList','distance','?api_key=','\x20كم</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<button\x20class=\x22remove-saved\x22\x20aria-label=\x22إزالة\x20من\x20المحفوظات\x22>×</button>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20','style','Error\x20reading\x20API\x20usage:','print-button','closest','LONG','innerHTML','\x0a\x20\x20\x20\x20\x20\x20\x20\x20.attempts-display\x20{\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20text-align:\x20center;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20margin:\x2010px\x200;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20padding:\x208px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20background:\x20rgba(0,\x200,\x200,\x200.05);\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20border-radius:\x204px;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20font-size:\x200.9em;\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20color:\x20var(--text-secondary);\x0a\x20\x20\x20\x20\x20\x20\x20\x20}\x0a\x20\x20\x20\x20','\x20(تجديد\x20بعد\x20','bind','\x20↔\x20','https://api.openrouteservice.org/v2/directions/driving-car','time-value','_cache','remove','target','recent-searches'];_0x8b9c=function(){return _0x15a083;};return _0x8b9c();}const _0x5eeffa=_0x2473;(function(_0x8f3c11,_0x2b5e1a){const _0x3d2b89=_0x2473,_0x460d30=_0x8f3c11();while(!![]){try{const _0x3a1918=-parseInt(_0x3d2b89(0xf5))/0x1+-parseInt(_0x3d2b89(0xee))/0x2+-parseInt(_0x3d2b89(0x10c))/0x3*(parseInt(_0x3d2b89(0xb8))/0x4)+parseInt(_0x3d2b89(0x119))/0x5+parseInt(_0x3d2b89(0xf3))/0x6+-parseInt(_0x3d2b89(0xed))/0x7+parseInt(_0x3d2b89(0xa3))/0x8;if(_0x3a1918===_0x2b5e1a)break;else _0x460d30['push'](_0x460d30['shift']());}catch(_0x3d26b5){_0x460d30['push'](_0x460d30['shift']());}}}(_0x8b9c,0xb5bdd));const _0x2b7d51=(function(){let _0x38109f=!![];return function(_0xc0af6f,_0x5b64b1){const _0x253e08=_0x38109f?function(){const _0x4c4be2=_0x2473;if(_0x5b64b1){const _0xc0e8ea=_0x5b64b1[_0x4c4be2(0x12f)](_0xc0af6f,arguments);return _0x5b64b1=null,_0xc0e8ea;}}:function(){};return _0x38109f=![],_0x253e08;};}()),_0x39f901=_0x2b7d51(this,function(){const _0x54392f=_0x2473;return _0x39f901[_0x54392f(0x80)]()[_0x54392f(0xd7)](_0x54392f(0xf9))[_0x54392f(0x80)]()[_0x54392f(0x6d)](_0x39f901)[_0x54392f(0xd7)](_0x54392f(0xf9));});_0x39f901();const _0x40531c=(function(){let _0x179913=!![];return function(_0x3e7f64,_0x1d8bbe){const _0x988ab3=_0x179913?function(){const _0x5afb8b=_0x2473;if(_0x1d8bbe){const _0x560ade=_0x1d8bbe[_0x5afb8b(0x12f)](_0x3e7f64,arguments);return _0x1d8bbe=null,_0x560ade;}}:function(){};return _0x179913=![],_0x988ab3;};}()),_0x5a0a0c=_0x40531c(this,function(){const _0xa6db60=_0x2473;let _0x50cc41;try{const _0x34b7eb=Function(_0xa6db60(0xbd)+'{}.constructor(\x22return\x20this\x22)(\x20)'+');');_0x50cc41=_0x34b7eb();}catch(_0x187670){_0x50cc41=window;}const _0x2a6b2b=_0x50cc41[_0xa6db60(0x128)]=_0x50cc41[_0xa6db60(0x128)]||{},_0x43794f=[_0xa6db60(0x101),_0xa6db60(0x109),_0xa6db60(0xb1),'error',_0xa6db60(0x13b),_0xa6db60(0x108),'trace'];for(let _0x43f858=0x0;_0x43f858<_0x43794f[_0xa6db60(0xba)];_0x43f858++){const _0x15ed29=_0x40531c[_0xa6db60(0x6d)][_0xa6db60(0x75)][_0xa6db60(0x97)](_0x40531c),_0x500c99=_0x43794f[_0x43f858],_0x3cafe9=_0x2a6b2b[_0x500c99]||_0x15ed29;_0x15ed29[_0xa6db60(0x136)]=_0x40531c[_0xa6db60(0x97)](_0x40531c),_0x15ed29['toString']=_0x3cafe9['toString'][_0xa6db60(0x97)](_0x3cafe9),_0x2a6b2b[_0x500c99]=_0x15ed29;}});_0x5a0a0c();const CONFIG={'ORS_API_KEY':_0x5eeffa(0xf8),'ORS_API_URL':_0x5eeffa(0x99),'MIN_RATE':2.5,'MAX_RATE':0x7,'CACHE_VERSION':0x2,'OFFLINE_CACHE_NAME':_0x5eeffa(0x129)},apiUsage={'_storageKey':_0x5eeffa(0x6f),'requestLimit':0x14,'timeWindowMinutes':0xa,'init'(){const _0xed4fd4=_0x5eeffa;this[_0xed4fd4(0x127)]();},'_getRequests'(){const _0x1ffc5a=_0x5eeffa;try{return JSON[_0x1ffc5a(0xef)](localStorage[_0x1ffc5a(0xc7)](this[_0x1ffc5a(0xc1)])||'[]');}catch(_0x1b9db1){return console[_0x1ffc5a(0x12a)](_0x1ffc5a(0x90),_0x1b9db1),[];}},'_cleanupOldRequests'(){const _0x360e4f=_0x5eeffa,_0x35ad0c=Date['now'](),_0x37d370=this['timeWindowMinutes']*0x3c*0x3e8,_0x4cfae8=this[_0x360e4f(0x7c)](),_0x353609=_0x4cfae8['filter'](_0x214e3f=>_0x35ad0c-_0x214e3f<_0x37d370);localStorage[_0x360e4f(0xb5)](this['_storageKey'],JSON[_0x360e4f(0x103)](_0x353609));},'increment'(){const _0x2a8352=_0x5eeffa,_0x4f0628=this[_0x2a8352(0x7c)]();_0x4f0628[_0x2a8352(0xfc)](Date[_0x2a8352(0x7d)]()),localStorage['setItem'](this[_0x2a8352(0xc1)],JSON[_0x2a8352(0x103)](_0x4f0628));},'getRemaining'(){const _0x57c6fd=_0x5eeffa;this['_cleanupOldRequests']();const _0x3d9896=this['_getRequests']();return Math[_0x57c6fd(0x104)](0x0,this[_0x57c6fd(0xd1)]-_0x3d9896[_0x57c6fd(0xba)]);},'canMakeRequest'(){const _0x59d77b=_0x5eeffa;return this[_0x59d77b(0x72)]()>0x0;},'getTimeUntilReset'(){const _0x44dfa0=_0x5eeffa,_0x1a0f07=this[_0x44dfa0(0x7c)]();if(_0x1a0f07[_0x44dfa0(0xba)]===0x0)return 0x0;const _0x1d470a=Date['now'](),_0xf42418=this[_0x44dfa0(0x10a)]*0x3c*0x3e8,_0xfdb62d=Math[_0x44dfa0(0xff)](..._0x1a0f07),_0x49f73c=_0xfdb62d+_0xf42418-_0x1d470a;return Math[_0x44dfa0(0x104)](0x0,Math[_0x44dfa0(0xe1)](_0x49f73c/0x3e8));}},distanceCache={'_cache':new Map(),'_storageKey':_0x5eeffa(0xa8),'init'(){const _0x5dbae4=_0x5eeffa,_0x54f850=localStorage[_0x5dbae4(0xc7)](this['_storageKey']);if(_0x54f850)try{const _0x2153ab=JSON['parse'](_0x54f850);this[_0x5dbae4(0x9b)]=new Map(Object[_0x5dbae4(0xaf)](_0x2153ab));}catch(_0x20f97d){console[_0x5dbae4(0x12a)](_0x5dbae4(0x6e),_0x20f97d);}},'_generateKey'(_0xabca9d,_0x101b0a){const _0x2f44f3=_0x5eeffa;return[_0xabca9d,_0x101b0a][_0x2f44f3(0x10d)]()[_0x2f44f3(0x105)]('-');},'get'(_0x372b4b,_0x23e70f){const _0x17ec09=_0x5eeffa;return this[_0x17ec09(0x9b)][_0x17ec09(0x12e)](this[_0x17ec09(0x74)](_0x372b4b,_0x23e70f));},'set'(_0x3af93f,_0x3eb6af,_0x1b2246){const _0x40a000=_0x5eeffa,_0x517112=this[_0x40a000(0x74)](_0x3af93f,_0x3eb6af);this[_0x40a000(0x9b)][_0x40a000(0xfa)](_0x517112,_0x1b2246),this[_0x40a000(0x138)]();},'has'(_0x5575c2,_0x1fd4f7){const _0x348c41=_0x5eeffa;return this['_cache'][_0x348c41(0x131)](this[_0x348c41(0x74)](_0x5575c2,_0x1fd4f7));},'_saveToStorage'(){const _0x17da5a=_0x5eeffa;try{const _0x3d9814=Object[_0x17da5a(0x88)](this[_0x17da5a(0x9b)]);localStorage[_0x17da5a(0xb5)](this['_storageKey'],JSON[_0x17da5a(0x103)](_0x3d9814));}catch(_0x524391){console['error'](_0x17da5a(0x83),_0x524391);}}},recentSearches={'_storageKey':'recentSearches','maxItems':0x5,'get'(){const _0xd4d723=_0x5eeffa;try{return JSON[_0xd4d723(0xef)](localStorage[_0xd4d723(0xc7)](this[_0xd4d723(0xc1)])||'[]');}catch(_0x3ba958){return console[_0xd4d723(0x12a)](_0xd4d723(0x82),_0x3ba958),[];}},'add'(_0x2f21db,_0x5b0ef5,_0x5808ab){const _0x45b853=_0x5eeffa,_0x23d302=this[_0x45b853(0x12e)](),_0x1d64ca={'from':_0x2f21db,'to':_0x5b0ef5,'distance':_0x5808ab,'timestamp':Date[_0x45b853(0x7d)]()},_0x34921f=_0x23d302[_0x45b853(0x115)](_0x7a2171=>!(_0x7a2171[_0x45b853(0x111)]===_0x2f21db&&_0x7a2171['to']===_0x5b0ef5)&&!(_0x7a2171['from']===_0x5b0ef5&&_0x7a2171['to']===_0x2f21db));_0x34921f[_0x45b853(0x73)](_0x1d64ca);const _0x3964c9=_0x34921f['slice'](0x0,this[_0x45b853(0xb6)]);try{localStorage[_0x45b853(0xb5)](this[_0x45b853(0xc1)],JSON['stringify'](_0x3964c9)),this['updateUI']();}catch(_0x3f27f0){console[_0x45b853(0x12a)](_0x45b853(0x135),_0x3f27f0);}},'updateUI'(){const _0x5993c3=_0x5eeffa,_0x3b11f8=document[_0x5993c3(0xa6)](_0x5993c3(0x9e)),_0x452225=this[_0x5993c3(0x12e)]();if(_0x452225[_0x5993c3(0xba)]===0x0){_0x3b11f8[_0x5993c3(0x8f)][_0x5993c3(0xbf)]=_0x5993c3(0xde);return;}const _0x31708b=_0x452225[_0x5993c3(0xa1)](_0x5cbe0f=>_0x5993c3(0x11c)+_0x5cbe0f[_0x5993c3(0x111)]+_0x5993c3(0xe2)+_0x5cbe0f['to']+_0x5993c3(0xe6)+_0x5cbe0f['from']+_0x5993c3(0x98)+_0x5cbe0f['to']+_0x5993c3(0x7f)+_0x5cbe0f[_0x5993c3(0x8c)]+_0x5993c3(0x7a)+formatTimestamp(_0x5cbe0f[_0x5993c3(0x12d)])+_0x5993c3(0xd3))[_0x5993c3(0x105)]('');_0x3b11f8['innerHTML']=_0x5993c3(0xa0)+_0x31708b+_0x5993c3(0xc6),_0x3b11f8[_0x5993c3(0x8f)][_0x5993c3(0xbf)]=_0x5993c3(0x134);}},savedRoutes={'_storageKey':_0x5eeffa(0x116),'get'(){const _0x1673c3=_0x5eeffa;try{return JSON['parse'](localStorage[_0x1673c3(0xc7)](this[_0x1673c3(0xc1)])||'[]');}catch(_0x155060){return console[_0x1673c3(0x12a)](_0x1673c3(0x84),_0x155060),[];}},'toggle'(_0x1b0756,_0x5cc992,_0x12601e=null){const _0x124f29=_0x5eeffa,_0x398d98=this[_0x124f29(0x12e)](),_0x648ab9=this['_generateKey'](_0x1b0756,_0x5cc992),_0x4240a1=_0x398d98['findIndex'](_0x5b63c1=>this[_0x124f29(0x74)](_0x5b63c1['from'],_0x5b63c1['to'])===_0x648ab9);if(_0x4240a1>=0x0)_0x398d98[_0x124f29(0xe8)](_0x4240a1,0x1);else _0x12601e!==null&&_0x398d98[_0x124f29(0xfc)]({'from':_0x1b0756,'to':_0x5cc992,'distance':_0x12601e,'savedAt':Date[_0x124f29(0x7d)]()});try{return localStorage[_0x124f29(0xb5)](this[_0x124f29(0xc1)],JSON[_0x124f29(0x103)](_0x398d98)),this[_0x124f29(0xbb)](),_0x4240a1<0x0;}catch(_0x405d0c){return console[_0x124f29(0x12a)](_0x124f29(0xf6),_0x405d0c),![];}},'_generateKey'(_0x17c9a6,_0x238208){const _0x2c4743=_0x5eeffa;return[_0x17c9a6,_0x238208]['sort']()[_0x2c4743(0x105)]('-');},'updateUI'(){const _0x417e97=_0x5eeffa,_0x5d9a13=document['getElementById'](_0x417e97(0xa7)),_0x178859=this[_0x417e97(0x12e)]();if(_0x178859[_0x417e97(0xba)]===0x0){_0x5d9a13[_0x417e97(0x8f)][_0x417e97(0xbf)]=_0x417e97(0xde);return;}const _0xb65a22=_0x178859[_0x417e97(0xa1)](_0x427cda=>_0x417e97(0xb7)+_0x427cda['from']+_0x417e97(0xe2)+_0x427cda['to']+_0x417e97(0xe6)+_0x427cda[_0x417e97(0x111)]+_0x417e97(0x98)+_0x427cda['to']+_0x417e97(0x7f)+_0x427cda[_0x417e97(0x8c)]+_0x417e97(0x8e))[_0x417e97(0x105)]('');_0x5d9a13[_0x417e97(0x94)]=_0x417e97(0xfd)+_0xb65a22+'\x0a\x20\x20\x20\x20\x20\x20\x20\x20',_0x5d9a13[_0x417e97(0x8f)][_0x417e97(0xbf)]='block';}};async function calculateDistance(_0x22760e,_0x1d36e6){const _0x262093=_0x5eeffa;if(distanceCache[_0x262093(0x131)](_0x22760e,_0x1d36e6))return distanceCache[_0x262093(0x12e)](_0x22760e,_0x1d36e6);if(!apiUsage[_0x262093(0x89)]()){const _0x57b883=apiUsage[_0x262093(0x130)](),_0x34a187=Math[_0x262093(0x125)](_0x57b883/0x3c),_0x4995f8=_0x57b883%0x3c,_0x4dfef3=_0x34a187>0x0?_0x34a187+_0x262093(0xea)+_0x4995f8+_0x262093(0x107):_0x4995f8+_0x262093(0x107);throw new Error('تم\x20تجاوز\x20الحد\x20الأقصى\x20للطلبات.\x20يرجى\x20الانتظار\x20'+_0x4dfef3+_0x262093(0x86));}const _0x53b450=wilayaData[_0x22760e][_0x262093(0xce)],_0x2e5675=wilayaData[_0x1d36e6][_0x262093(0xce)];try{const _0x42cf75=_0x53b450[0x1]+','+_0x53b450[0x0],_0x5af917=_0x2e5675[0x1]+','+_0x2e5675[0x0],_0x4c4bdf=CONFIG[_0x262093(0x11a)]+_0x262093(0x8d)+CONFIG['ORS_API_KEY']+_0x262093(0xa4)+_0x42cf75+_0x262093(0xd4)+_0x5af917,_0x238ad8=await fetch(_0x4c4bdf);apiUsage[_0x262093(0xcb)]();if(!_0x238ad8['ok']){const _0x2612d0=await _0x238ad8[_0x262093(0x78)]();console['error'](_0x262093(0xc9),_0x2612d0);throw new Error('HTTP\x20error!\x20status:\x20'+_0x238ad8['status']);}const _0x5bd805=await _0x238ad8[_0x262093(0x78)]();if(_0x5bd805[_0x262093(0xd6)]&&_0x5bd805[_0x262093(0xd6)][0x0]&&_0x5bd805[_0x262093(0xd6)][0x0][_0x262093(0xc3)]){const _0x45029c=_0x5bd805[_0x262093(0xd6)][0x0][_0x262093(0xc3)]['summary'];if(!_0x45029c)throw new Error(_0x262093(0x123));const _0x37dda8=Math[_0x262093(0x11f)](_0x45029c[_0x262093(0x8c)]/0x3e8),_0x2bbd89=Math['round'](_0x45029c['duration']/0x3c),_0x466920={'distance':_0x37dda8,'duration':_0x2bbd89};return distanceCache[_0x262093(0xfa)](_0x22760e,_0x1d36e6,_0x466920),_0x466920;}throw new Error('Invalid\x20response\x20format\x20from\x20API');}catch(_0x287817){console['error']('Error\x20calculating\x20distance:',_0x287817);throw _0x287817;}}function calculateRecommendedRate(_0x55adcd){const _0x1b8f8c=_0x5eeffa,_0x4a6f50={'SHORT':{'maxDistance':0x96,'minRate':3.5,'maxRate':0x5,'typicalMin':0x4,'typicalMax':4.5},'MEDIUM':{'maxDistance':0x190,'minRate':0x3,'maxRate':4.5,'typicalMin':3.5,'typicalMax':0x4},'LONG':{'minDistance':0x190,'minRate':2.5,'maxRate':3.5,'typicalMin':2.8,'typicalMax':3.2}};let _0x1e413c;if(_0x55adcd<=_0x4a6f50[_0x1b8f8c(0xe4)][_0x1b8f8c(0xc5)])_0x1e413c=_0x4a6f50[_0x1b8f8c(0xe4)];else _0x55adcd<=_0x4a6f50[_0x1b8f8c(0x10b)][_0x1b8f8c(0xc5)]?_0x1e413c=_0x4a6f50[_0x1b8f8c(0x10b)]:_0x1e413c=_0x4a6f50[_0x1b8f8c(0x93)];let _0x30de4e;if(_0x1e413c===_0x4a6f50[_0x1b8f8c(0x93)]){const _0x346e51=0.001,_0x59c5de=_0x1e413c[_0x1b8f8c(0xd9)],_0x1af2ea=Math[_0x1b8f8c(0x104)](0x0,_0x55adcd-_0x4a6f50[_0x1b8f8c(0x93)]['minDistance']);_0x30de4e=_0x59c5de+(_0x1e413c['maxRate']-_0x59c5de)*Math[_0x1b8f8c(0xb2)](-_0x346e51*_0x1af2ea);}else{const _0x9ed333=(_0x55adcd-(_0x1e413c===_0x4a6f50['SHORT']?0x0:_0x4a6f50['SHORT'][_0x1b8f8c(0xc5)]))/(_0x1e413c[_0x1b8f8c(0xc5)]-(_0x1e413c===_0x4a6f50[_0x1b8f8c(0xe4)]?0x0:_0x4a6f50[_0x1b8f8c(0xe4)][_0x1b8f8c(0xc5)]));_0x30de4e=_0x1e413c['typicalMax']-_0x9ed333*(_0x1e413c[_0x1b8f8c(0xbe)]-_0x1e413c[_0x1b8f8c(0xd9)]);}return Math['min'](Math[_0x1b8f8c(0x104)](_0x30de4e,_0x1e413c[_0x1b8f8c(0x79)]),_0x1e413c[_0x1b8f8c(0x12b)]);}function updateUI(_0x7dfe71,_0x229959,_0xfd53d6){const _0x165917=_0x5eeffa;document[_0x165917(0xa6)](_0x165917(0x87))[_0x165917(0xae)]=_0x7dfe71,document[_0x165917(0xa6)](_0x165917(0xf4))[_0x165917(0xae)]=_0x229959,document[_0x165917(0xa6)](_0x165917(0xd2))['textContent']=_0xfd53d6[_0x165917(0x8c)];const _0x1b0b48=Math[_0x165917(0x125)](_0xfd53d6[_0x165917(0xbc)]/0x3c),_0x3bf49b=_0xfd53d6[_0x165917(0xbc)]%0x3c,_0x4fe446=_0x1b0b48>0x0?_0x1b0b48+_0x165917(0xe5)+(_0x3bf49b>0x0?_0x165917(0x120)+_0x3bf49b+_0x165917(0x126):''):_0x3bf49b+'\x20دقيقة';document[_0x165917(0xa6)](_0x165917(0x9a))['textContent']=_0x4fe446;const _0x1a8974=Math[_0x165917(0x11f)](_0xfd53d6[_0x165917(0x8c)]*CONFIG['MIN_RATE']),_0x43caa9=Math[_0x165917(0x11f)](_0xfd53d6[_0x165917(0x8c)]*CONFIG['MAX_RATE']),_0x14cc0c=calculateRecommendedRate(_0xfd53d6[_0x165917(0x8c)]),_0x398461=Math[_0x165917(0x11f)](_0xfd53d6[_0x165917(0x8c)]*_0x14cc0c/0x64)*0x64;document[_0x165917(0xa6)]('min-price')[_0x165917(0xae)]=_0x1a8974['toLocaleString']()+_0x165917(0x118),document[_0x165917(0xa6)](_0x165917(0xf1))[_0x165917(0xae)]=_0x43caa9['toLocaleString']()+_0x165917(0x118),document[_0x165917(0xa6)](_0x165917(0x7b))[_0x165917(0xae)]=_0x398461['toLocaleString']()+_0x165917(0x118);}async function handleRouteUpdate(){const _0x369af3=_0x5eeffa,_0x1bc899=wilaya1Select[_0x369af3(0x122)],_0x2fd85e=wilaya2Select[_0x369af3(0x122)];if(!_0x1bc899||!_0x2fd85e)return;if(_0x1bc899===_0x2fd85e){showError(_0x369af3(0x7e));return;}showLoading(!![]),hideError();try{const _0x11334d=await calculateDistance(_0x1bc899,_0x2fd85e);updateUI(_0x1bc899,_0x2fd85e,_0x11334d),recentSearches['add'](_0x1bc899,_0x2fd85e,_0x11334d[_0x369af3(0x8c)]),showResult(!![]),updateRemainingAttempts();}catch(_0x14e8c8){showError(_0x14e8c8[_0x369af3(0xb0)]);}finally{showLoading(![]);}}function handleShare(){const _0x4504e8=_0x5eeffa,_0x5762dd=wilaya1Select['value'],_0x577079=wilaya2Select['value'],_0x227480=document[_0x4504e8(0xa6)](_0x4504e8(0xd2))[_0x4504e8(0xae)],_0x2f7934=_0x4504e8(0xcf)+_0x5762dd+'\x20و\x20'+_0x577079+_0x4504e8(0xe9)+_0x227480+'\x20كم';navigator[_0x4504e8(0x133)]?navigator[_0x4504e8(0x133)]({'title':_0x4504e8(0xe7),'text':_0x2f7934,'url':window[_0x4504e8(0xc4)][_0x4504e8(0x106)]})['catch'](console[_0x4504e8(0x12a)]):navigator['clipboard'][_0x4504e8(0xda)](_0x2f7934)['then'](()=>showNotification(_0x4504e8(0xc0)))[_0x4504e8(0x8a)](console['error']);}function showLoading(_0x16208b){const _0x15a3fd=_0x5eeffa;document[_0x15a3fd(0xa6)](_0x15a3fd(0x85))[_0x15a3fd(0x8b)]['toggle']('show',_0x16208b);}function showResult(_0x22f780){const _0x1fe49f=_0x5eeffa;document['getElementById'](_0x1fe49f(0xa5))['classList'][_0x1fe49f(0xc8)](_0x1fe49f(0x114),_0x22f780);}function showError(_0x2e6558){const _0xbae042=_0x5eeffa,_0x585e15=document['getElementById'](_0xbae042(0x12a));_0x585e15[_0xbae042(0xae)]=_0x2e6558,_0x585e15[_0xbae042(0x8b)][_0xbae042(0x117)](_0xbae042(0x114)),showResult(![]);}function hideError(){const _0x540cb0=_0x5eeffa;document[_0x540cb0(0xa6)](_0x540cb0(0x12a))[_0x540cb0(0x8b)][_0x540cb0(0x9c)](_0x540cb0(0x114));}function formatTimestamp(_0x340b6c){const _0x5c9c91=_0x5eeffa,_0x427683=Date[_0x5c9c91(0x7d)](),_0x3bc6bb=Math[_0x5c9c91(0x125)]((_0x427683-_0x340b6c)/0x3e8);if(_0x3bc6bb<0x3c)return _0x5c9c91(0xb3);else{if(_0x3bc6bb<0xe10){const _0x59be45=Math[_0x5c9c91(0x125)](_0x3bc6bb/0x3c);return _0x5c9c91(0x81)+_0x59be45+_0x5c9c91(0x126);}else{if(_0x3bc6bb<0x15180){const _0x3e71b3=Math[_0x5c9c91(0x125)](_0x3bc6bb/0xe10);return _0x5c9c91(0x81)+_0x3e71b3+_0x5c9c91(0xe5);}else{const _0x47e3a6=Math[_0x5c9c91(0x125)](_0x3bc6bb/0x15180);return _0x5c9c91(0x81)+_0x47e3a6+_0x5c9c91(0x11e);}}}}function showNotification(_0x29846e){const _0x357df6=_0x5eeffa,_0x130c2f=document[_0x357df6(0x11b)]('div');_0x130c2f[_0x357df6(0xd0)]='notification',_0x130c2f[_0x357df6(0xae)]=_0x29846e,document[_0x357df6(0x9f)][_0x357df6(0x112)](_0x130c2f),setTimeout(()=>{_0x130c2f['remove']();},0xbb8);}function updateRemainingAttempts(){const _0x120001=_0x5eeffa,_0x113fcc=apiUsage[_0x120001(0x72)](),_0x3a74c4=document['getElementById'](_0x120001(0xf7));if(_0x113fcc<apiUsage['requestLimit']){const _0x5c138b=apiUsage['getTimeUntilReset'](),_0x469ef4=Math[_0x120001(0x125)](_0x5c138b/0x3c),_0xd98839=_0x5c138b%0x3c;_0x3a74c4[_0x120001(0x94)]=_0x120001(0xfe)+_0x113fcc+_0x120001(0x96)+_0x469ef4+'\x20دقيقة\x20'+(_0xd98839>0x0?'و\x20'+_0xd98839+_0x120001(0x107):'')+')';}else _0x3a74c4[_0x120001(0x94)]=_0x120001(0xfe)+_0x113fcc;_0x113fcc<apiUsage['requestLimit']&&setTimeout(updateRemainingAttempts,0x3e8);}function openInGoogleMaps(){const _0xacfb6f=_0x5eeffa,_0xb19880=wilaya1Select['value'],_0x4b9b9e=wilaya2Select[_0xacfb6f(0x122)];if(!_0xb19880||!_0x4b9b9e){showNotification(_0xacfb6f(0x70));return;}const _0x384bbf=wilayaData[_0xb19880][_0xacfb6f(0xce)],_0x1f7a18=wilayaData[_0x4b9b9e][_0xacfb6f(0xce)],_0x2b764b=_0xacfb6f(0x10f)+_0x384bbf[0x0]+','+_0x384bbf[0x1]+'&destination='+_0x1f7a18[0x0]+','+_0x1f7a18[0x1]+_0xacfb6f(0x121);window[_0xacfb6f(0x124)](_0x2b764b,_0xacfb6f(0x110));}document[_0x5eeffa(0xa6)](_0x5eeffa(0xcc))?.[_0x5eeffa(0x11d)](_0x5eeffa(0x10e),handleShare),document[_0x5eeffa(0xa6)](_0x5eeffa(0x91))?.[_0x5eeffa(0x11d)](_0x5eeffa(0x10e),()=>window[_0x5eeffa(0xb4)]()),document[_0x5eeffa(0xa6)]('map-button')?.[_0x5eeffa(0x11d)](_0x5eeffa(0x10e),openInGoogleMaps),document[_0x5eeffa(0xca)];function _0x2473(_0x3fd85b,_0x3090bd){const _0x55e391=_0x8b9c();return _0x2473=function(_0x5a0a0c,_0x40531c){_0x5a0a0c=_0x5a0a0c-0x6d;let _0x29ddf7=_0x55e391[_0x5a0a0c];return _0x29ddf7;},_0x2473(_0x3fd85b,_0x3090bd);}function initializeApp(){const _0xd22ec5=_0x5eeffa;apiUsage[_0xd22ec5(0xeb)](),distanceCache[_0xd22ec5(0xeb)]();const _0x2b4d6e=document['getElementById'](_0xd22ec5(0x71)),_0x1bf86c=document[_0xd22ec5(0x11b)](_0xd22ec5(0xd8));_0x1bf86c['id']=_0xd22ec5(0xf7),_0x1bf86c[_0xd22ec5(0xd0)]=_0xd22ec5(0xb9),_0x2b4d6e[_0xd22ec5(0x139)](_0xd22ec5(0xab),_0x1bf86c);const _0x45a542=document['createElement'](_0xd22ec5(0x8f));_0x45a542['textContent']=_0xd22ec5(0x95),document[_0xd22ec5(0x100)]['appendChild'](_0x45a542),updateRemainingAttempts();const _0x4ee1b6=Object[_0xd22ec5(0x132)](wilayaData),_0x32bb0d=document['createDocumentFragment'](),_0x591890=document[_0xd22ec5(0xa9)]();_0x4ee1b6[_0xd22ec5(0x13a)](_0x2547ae=>{const _0x433c4d=_0xd22ec5,_0x1fe15d=new Option(_0x2547ae,_0x2547ae),_0x40b707=new Option(_0x2547ae,_0x2547ae);_0x32bb0d[_0x433c4d(0x112)](_0x1fe15d),_0x591890[_0x433c4d(0x112)](_0x40b707);}),wilaya1Select[_0xd22ec5(0x112)](_0x32bb0d),wilaya2Select['appendChild'](_0x591890),recentSearches[_0xd22ec5(0xbb)](),savedRoutes['updateUI']();const _0x5ad671=apiUsage[_0xd22ec5(0x72)]();if(_0x5ad671<0x3){const _0x4c24ae=apiUsage[_0xd22ec5(0x130)](),_0xa661f7=Math['floor'](_0x4c24ae/0x3c);showNotification(_0xd22ec5(0xdf)+_0x5ad671+'\x20طلبات\x20فقط.\x20سيتم\x20تجديد\x20الطلبات\x20بعد\x20'+_0xa661f7+_0xd22ec5(0x126));}!navigator[_0xd22ec5(0x113)]&&(document[_0xd22ec5(0xa6)]('offline-notice')['hidden']=![]);}document[_0x5eeffa(0x11d)](_0x5eeffa(0x102),initializeApp);const wilaya1Select=document['getElementById'](_0x5eeffa(0xcd)),wilaya2Select=document[_0x5eeffa(0xa6)](_0x5eeffa(0x77));wilaya1Select[_0x5eeffa(0x11d)](_0x5eeffa(0xe3),handleRouteUpdate),wilaya2Select['addEventListener'](_0x5eeffa(0xe3),handleRouteUpdate),document[_0x5eeffa(0x11d)](_0x5eeffa(0x10e),_0x1c7d88=>{const _0x2739d6=_0x5eeffa;if(_0x1c7d88[_0x2739d6(0x9d)][_0x2739d6(0x92)](_0x2739d6(0xdb))){const _0x224204=_0x1c7d88['target'][_0x2739d6(0x92)](_0x2739d6(0xdb)),_0x1bd172=_0x224204[_0x2739d6(0xdc)][_0x2739d6(0x111)],_0x26c3c3=_0x224204[_0x2739d6(0xdc)]['to'];wilaya1Select['value']=_0x1bd172,wilaya2Select['value']=_0x26c3c3,handleRouteUpdate();}if(_0x1c7d88[_0x2739d6(0x9d)][_0x2739d6(0x92)](_0x2739d6(0xfb))&&!_0x1c7d88[_0x2739d6(0x9d)][_0x2739d6(0x8b)][_0x2739d6(0xad)](_0x2739d6(0x137))){const _0x1f958b=_0x1c7d88['target'][_0x2739d6(0x92)]('.route-item'),_0x4a21af=_0x1f958b[_0x2739d6(0xdc)][_0x2739d6(0x111)],_0x5737b3=_0x1f958b['dataset']['to'];wilaya1Select[_0x2739d6(0x122)]=_0x4a21af,wilaya2Select[_0x2739d6(0x122)]=_0x5737b3,handleRouteUpdate();}if(_0x1c7d88[_0x2739d6(0x9d)][_0x2739d6(0x8b)]['contains'](_0x2739d6(0x137))){const _0x34f40e=_0x1c7d88[_0x2739d6(0x9d)][_0x2739d6(0x92)](_0x2739d6(0xfb)),_0x2a3182=_0x34f40e[_0x2739d6(0xdc)][_0x2739d6(0x111)],_0x3ec281=_0x34f40e['dataset']['to'];savedRoutes[_0x2739d6(0xc8)](_0x2a3182,_0x3ec281),showNotification('تم\x20إزالة\x20المسار\x20من\x20المحفوظات');}}),document[_0x5eeffa(0xa6)](_0x5eeffa(0xdd))['addEventListener'](_0x5eeffa(0x10e),()=>{const _0x4b6b5f=_0x5eeffa,_0xb8ad3c=wilaya1Select[_0x4b6b5f(0x122)];wilaya1Select[_0x4b6b5f(0x122)]=wilaya2Select[_0x4b6b5f(0x122)],wilaya2Select[_0x4b6b5f(0x122)]=_0xb8ad3c,wilaya1Select[_0x4b6b5f(0x122)]&&wilaya2Select[_0x4b6b5f(0x122)]&&handleRouteUpdate();}),document['getElementById'](_0x5eeffa(0xcc))?.['addEventListener'](_0x5eeffa(0x10e),handleShare),document[_0x5eeffa(0xa6)](_0x5eeffa(0x91))?.['addEventListener'](_0x5eeffa(0x10e),()=>window[_0x5eeffa(0xb4)]()),document[_0x5eeffa(0xa6)](_0x5eeffa(0xc2))?.[_0x5eeffa(0x11d)](_0x5eeffa(0x10e),()=>{const _0x72ccc1=_0x5eeffa,_0x5715e4=wilaya1Select[_0x72ccc1(0x122)],_0x3fc1c1=wilaya2Select['value'];if(_0x5715e4&&_0x3fc1c1){const _0x3df3bb=wilayaData[_0x5715e4][_0x72ccc1(0xce)],_0x1c0d4d=wilayaData[_0x3fc1c1][_0x72ccc1(0xce)],_0x3a5452=_0x72ccc1(0x10f)+_0x3df3bb[0x0]+','+_0x3df3bb[0x1]+'&destination='+_0x1c0d4d[0x0]+','+_0x1c0d4d[0x1]+'&travelmode=driving';window[_0x72ccc1(0x124)](_0x3a5452,_0x72ccc1(0x110));}}),document['getElementById'](_0x5eeffa(0xd5))?.['addEventListener'](_0x5eeffa(0x10e),()=>{const _0x5212b2=_0x5eeffa,_0x395786=wilaya1Select['value'],_0x58c6ad=wilaya2Select['value'],_0x5b9fc1=parseInt(document[_0x5212b2(0xa6)]('distance-value')[_0x5212b2(0xae)]);if(_0x395786&&_0x58c6ad&&_0x5b9fc1){const _0x538614=savedRoutes[_0x5212b2(0xc8)](_0x395786,_0x58c6ad,_0x5b9fc1);showNotification(_0x538614?_0x5212b2(0xf2):_0x5212b2(0xec));}}),window[_0x5eeffa(0x11d)]('online',()=>{const _0x447011=_0x5eeffa;document[_0x447011(0xa6)](_0x447011(0x12c))[_0x447011(0xf0)]=!![],showNotification(_0x447011(0x76));}),window[_0x5eeffa(0x11d)](_0x5eeffa(0xaa),()=>{const _0x2ce02e=_0x5eeffa;document[_0x2ce02e(0xa6)]('offline-notice')[_0x2ce02e(0xf0)]=![],showNotification(_0x2ce02e(0xac));});const notificationStyles=_0x5eeffa(0xe0);if(!document['getElementById'](_0x5eeffa(0xa2))){const styleSheet=document['createElement'](_0x5eeffa(0x8f));styleSheet['id']='notification-styles',styleSheet['textContent']=notificationStyles,document[_0x5eeffa(0x100)]['appendChild'](styleSheet);}
+// Constants
+const CONFIG = {
+    ORS_API_KEY: '5b3ce3597851110001cf62486bcb783b711d46cbaaa5196c2c053ee6',
+    ORS_API_URL: 'https://api.openrouteservice.org/v2/directions/driving-car',
+    MIN_RATE: 2.5,
+    MAX_RATE: 7,
+    CACHE_VERSION: 2,
+    OFFLINE_CACHE_NAME: 'distance-calc-offline-v2'
+};
+
+// API Usage Management
+const apiUsage = {
+    _storageKey: 'ors_api_usage',
+    requestLimit: 20,
+    timeWindowMinutes: 10,
+    
+    init() {
+        this._cleanupOldRequests();
+    },
+    
+    _getRequests() {
+        try {
+            return JSON.parse(localStorage.getItem(this._storageKey) || '[]');
+        } catch (e) {
+            console.error('Error reading API usage:', e);
+            return [];
+        }
+    },
+    
+    _cleanupOldRequests() {
+        const now = Date.now();
+        const windowMs = this.timeWindowMinutes * 60 * 1000;
+        const requests = this._getRequests();
+        
+        const validRequests = requests.filter(timestamp => 
+            now - timestamp < windowMs
+        );
+        
+        localStorage.setItem(this._storageKey, JSON.stringify(validRequests));
+    },
+    
+    increment() {
+        const requests = this._getRequests();
+        requests.push(Date.now());
+        localStorage.setItem(this._storageKey, JSON.stringify(requests));
+    },
+    
+    getRemaining() {
+        this._cleanupOldRequests();
+        const requests = this._getRequests();
+        return Math.max(0, this.requestLimit - requests.length);
+    },
+    
+    canMakeRequest() {
+        return this.getRemaining() > 0;
+    },
+
+    getTimeUntilReset() {
+        const requests = this._getRequests();
+        if (requests.length === 0) return 0;
+        
+        const now = Date.now();
+        const windowMs = this.timeWindowMinutes * 60 * 1000;
+        const oldestRequest = Math.min(...requests);
+        const resetTime = oldestRequest + windowMs - now;
+        
+        return Math.max(0, Math.ceil(resetTime / 1000));
+    }
+};
+
+// Cache Management
+const distanceCache = {
+    _cache: new Map(),
+    _storageKey: 'distanceCache',
+
+    init() {
+        const stored = localStorage.getItem(this._storageKey);
+        if (stored) {
+            try {
+                const parsed = JSON.parse(stored);
+                this._cache = new Map(Object.entries(parsed));
+            } catch (e) {
+                console.error('Cache initialization error:', e);
+            }
+        }
+    },
+
+    _generateKey(wilaya1, wilaya2) {
+        return [wilaya1, wilaya2].sort().join('-');
+    },
+
+    get(wilaya1, wilaya2) {
+        return this._cache.get(this._generateKey(wilaya1, wilaya2));
+    },
+
+    set(wilaya1, wilaya2, data) {
+        const key = this._generateKey(wilaya1, wilaya2);
+        this._cache.set(key, data);
+        this._saveToStorage();
+    },
+
+    has(wilaya1, wilaya2) {
+        return this._cache.has(this._generateKey(wilaya1, wilaya2));
+    },
+
+    _saveToStorage() {
+        try {
+            const cacheObject = Object.fromEntries(this._cache);
+            localStorage.setItem(this._storageKey, JSON.stringify(cacheObject));
+        } catch (e) {
+            console.error('Cache save error:', e);
+        }
+    }
+};
+
+// Recent Searches Management
+const recentSearches = {
+    _storageKey: 'recentSearches',
+    maxItems: 5,
+
+    get() {
+        try {
+            return JSON.parse(localStorage.getItem(this._storageKey) || '[]');
+        } catch (e) {
+            console.error('Recent searches retrieval error:', e);
+            return [];
+        }
+    },
+
+    add(wilaya1, wilaya2, distance) {
+        const searches = this.get();
+        const newSearch = {
+            from: wilaya1,
+            to: wilaya2,
+            distance,
+            timestamp: Date.now()
+        };
+
+        const filteredSearches = searches.filter(search => 
+            !(search.from === wilaya1 && search.to === wilaya2) &&
+            !(search.from === wilaya2 && search.to === wilaya1)
+        );
+
+        filteredSearches.unshift(newSearch);
+        const updatedSearches = filteredSearches.slice(0, this.maxItems);
+
+        try {
+            localStorage.setItem(this._storageKey, JSON.stringify(updatedSearches));
+            this.updateUI();
+        } catch (e) {
+            console.error('Recent searches save error:', e);
+        }
+    },
+
+    updateUI() {
+        const recentDiv = document.getElementById('recent-searches');
+        const searches = this.get();
+
+        if (searches.length === 0) {
+            recentDiv.style.display = 'none';
+            return;
+        }
+
+        const searchesHTML = searches.map(search => `
+            <div class="recent-item" data-from="${search.from}" data-to="${search.to}">
+                <div class="route-info">
+                    <span class="route-cities">${search.from} ↔ ${search.to}</span>
+                    <span class="route-distance">${search.distance} كم</span>
+                </div>
+                <div class="route-time">${formatTimestamp(search.timestamp)}</div>
+            </div>
+        `).join('');
+
+        recentDiv.innerHTML = `
+            <h3>عمليات البحث الأخيرة</h3>
+            ${searchesHTML}
+        `;
+        recentDiv.style.display = 'block';
+    }
+};
+
+// Saved Routes Management
+const savedRoutes = {
+    _storageKey: 'savedRoutes',
+
+    get() {
+        try {
+            return JSON.parse(localStorage.getItem(this._storageKey) || '[]');
+        } catch (e) {
+            console.error('Saved routes retrieval error:', e);
+            return [];
+        }
+    },
+
+    toggle(wilaya1, wilaya2, distance = null) {
+        const routes = this.get();
+        const routeKey = this._generateKey(wilaya1, wilaya2);
+        
+        const existingIndex = routes.findIndex(route => 
+            this._generateKey(route.from, route.to) === routeKey
+        );
+
+        if (existingIndex >= 0) {
+            routes.splice(existingIndex, 1);
+        } else if (distance !== null) {
+            routes.push({
+                from: wilaya1,
+                to: wilaya2,
+                distance,
+                savedAt: Date.now()
+            });
+        }
+
+        try {
+            localStorage.setItem(this._storageKey, JSON.stringify(routes));
+            this.updateUI();
+            return existingIndex < 0;
+        } catch (e) {
+            console.error('Saved routes save error:', e);
+            return false;
+        }
+    },
+
+    _generateKey(wilaya1, wilaya2) {
+        return [wilaya1, wilaya2].sort().join('-');
+    },
+
+    updateUI() {
+        const savedDiv = document.getElementById('saved-routes');
+        const routes = this.get();
+
+        if (routes.length === 0) {
+            savedDiv.style.display = 'none';
+            return;
+        }
+
+        const routesHTML = routes.map(route => `
+            <div class="route-item" data-from="${route.from}" data-to="${route.to}">
+                <div class="route-info">
+                    <span class="route-cities">${route.from} ↔ ${route.to}</span>
+                    <span class="route-distance">${route.distance} كم</span>
+                </div>
+                <button class="remove-saved" aria-label="إزالة من المحفوظات">×</button>
+            </div>
+        `).join('');
+
+        savedDiv.innerHTML = `
+            <h3>المسارات المحفوظة</h3>
+            ${routesHTML}
+        `;
+        savedDiv.style.display = 'block';
+    }
+};
+
+// API and Calculations
+async function calculateDistance(start, end) {
+    if (distanceCache.has(start, end)) {
+        return distanceCache.get(start, end);
+    }
+
+    if (!apiUsage.canMakeRequest()) {
+        const waitTime = apiUsage.getTimeUntilReset();
+        const minutes = Math.floor(waitTime / 60);
+        const seconds = waitTime % 60;
+        const timeMsg = minutes > 0 ? 
+            `${minutes} دقيقة و ${seconds} ثانية` : 
+            `${seconds} ثانية`;
+            
+        throw new Error(`تم تجاوز الحد الأقصى للطلبات. يرجى الانتظار ${timeMsg} قبل المحاولة مرة أخرى.`);
+    }
+
+    const startCoords = wilayaData[start].coordinates;
+    const endCoords = wilayaData[end].coordinates;
+
+    try {
+        const startStr = `${startCoords[1]},${startCoords[0]}`;
+        const endStr = `${endCoords[1]},${endCoords[0]}`;
+
+        const url = `${CONFIG.ORS_API_URL}?api_key=${CONFIG.ORS_API_KEY}&start=${startStr}&end=${endStr}`;
+        
+        const response = await fetch(url);
+        apiUsage.increment();
+
+        if (!response.ok) {
+            const errorData = await response.json();
+            console.error('API Error:', errorData);
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        const data = await response.json();
+
+        if (data.features && data.features[0] && data.features[0].properties) {
+            const summary = data.features[0].properties.summary;
+            
+            if (!summary) {
+                throw new Error('No route summary found in response');
+            }
+
+            const distance = Math.round(summary.distance / 1000);
+            const duration = Math.round(summary.duration / 60);
+            
+            const routeData = { distance, duration };
+            distanceCache.set(start, end, routeData);
+            
+            return routeData;
+        }
+        throw new Error('Invalid response format from API');
+    } catch (error) {
+        console.error('Error calculating distance:', error);
+        throw error;
+    }
+}
+
+function calculateRecommendedRate(distance) {
+    // Define trip types and their boundaries
+    const TRIP_TYPES = {
+        SHORT: { maxDistance: 150, minRate: 3.5, maxRate: 5.0, typicalMin: 4.0, typicalMax: 4.5 },
+        MEDIUM: { maxDistance: 400, minRate: 3.0, maxRate: 4.5, typicalMin: 3.5, typicalMax: 4.0 },
+        LONG: { minDistance: 400, minRate: 2.5, maxRate: 3.5, typicalMin: 2.8, typicalMax: 3.2 }
+    };
+
+    // Determine trip type based on distance
+    let tripType;
+    if (distance <= TRIP_TYPES.SHORT.maxDistance) {
+        tripType = TRIP_TYPES.SHORT;
+    } else if (distance <= TRIP_TYPES.MEDIUM.maxDistance) {
+        tripType = TRIP_TYPES.MEDIUM;
+    } else {
+        tripType = TRIP_TYPES.LONG;
+    }
+
+    // Linear interpolation within the trip type's range
+    let rate;
+    if (tripType === TRIP_TYPES.LONG) {
+        // For long trips, use exponential decay to handle very long distances
+        const DECAY_FACTOR = 0.001; // Gentler decay
+        const baseRate = tripType.typicalMin;
+        const excess = Math.max(0, distance - TRIP_TYPES.LONG.minDistance);
+        rate = baseRate + (tripType.maxRate - baseRate) * Math.exp(-DECAY_FACTOR * excess);
+    } else {
+        // For short and medium trips, use linear interpolation within typical range
+        const rangePosition = (distance - (tripType === TRIP_TYPES.SHORT ? 0 : TRIP_TYPES.SHORT.maxDistance)) / 
+            (tripType.maxDistance - (tripType === TRIP_TYPES.SHORT ? 0 : TRIP_TYPES.SHORT.maxDistance));
+        rate = tripType.typicalMax - (rangePosition * (tripType.typicalMax - tripType.typicalMin));
+    }
+
+    // Ensure rate stays within absolute min/max bounds for the trip type
+    return Math.min(Math.max(rate, tripType.minRate), tripType.maxRate);
+}
+
+// UI Updates
+function updateUI(wilaya1, wilaya2, routeData) {
+    document.getElementById('start-wilaya').textContent = wilaya1;
+    document.getElementById('end-wilaya').textContent = wilaya2;
+    document.getElementById('distance-value').textContent = routeData.distance;
+
+    const hours = Math.floor(routeData.duration / 60);
+    const minutes = routeData.duration % 60;
+    
+    const timeString = hours > 0 
+        ? `${hours} ساعة${minutes > 0 ? ` و ${minutes} دقيقة` : ''}`
+        : `${minutes} دقيقة`;
+    document.getElementById('time-value').textContent = timeString;
+
+    const minPrice = Math.round(routeData.distance * CONFIG.MIN_RATE);
+    const maxPrice = Math.round(routeData.distance * CONFIG.MAX_RATE);
+    const recommendedRate = calculateRecommendedRate(routeData.distance);
+    const recommendedPrice = Math.round((routeData.distance * recommendedRate) / 100) * 100;
+
+    document.getElementById('min-price').textContent = `${minPrice.toLocaleString()} دج`;
+    document.getElementById('max-price').textContent = `${maxPrice.toLocaleString()} دج`;
+    document.getElementById('recommended-price').textContent = `${recommendedPrice.toLocaleString()} دج`;
+}
+
+// Event Handlers
+async function handleRouteUpdate() {
+    const wilaya1 = wilaya1Select.value;
+    const wilaya2 = wilaya2Select.value;
+
+    if (!wilaya1 || !wilaya2) return;
+
+    if (wilaya1 === wilaya2) {
+        showError("يرجى اختيار ولايتين مختلفتين");
+        return;
+    }
+
+    showLoading(true);
+    hideError();
+
+    try {
+        const routeData = await calculateDistance(wilaya1, wilaya2);
+        updateUI(wilaya1, wilaya2, routeData);
+        recentSearches.add(wilaya1, wilaya2, routeData.distance);
+        showResult(true);
+        updateRemainingAttempts();
+    } catch (error) {
+        showError(error.message);
+    } finally {
+        showLoading(false);
+    }
+}
+
+function handleShare() {
+    const wilaya1 = wilaya1Select.value;
+    const wilaya2 = wilaya2Select.value;
+    const distance = document.getElementById('distance-value').textContent;
+    
+    const text = `المسافة بين ${wilaya1} و ${wilaya2} هي ${distance} كم`;
+    
+    if (navigator.share) {
+        navigator.share({
+            title: 'حاسبة المسافات بين الولايات',
+            text: text,
+            url: window.location.href
+        }).catch(console.error);
+    } else {
+        navigator.clipboard.writeText(text)
+            .then(() => showNotification('تم نسخ النص'))
+            .catch(console.error);
+    }
+}
+
+// Utility Functions
+function showLoading(show) {
+    document.getElementById('loading').classList.toggle('show', show);
+}
+
+function showResult(show) {
+    document.getElementById('result').classList.toggle('show', show);
+}
+
+function showError(message) {
+    const errorDiv = document.getElementById('error');
+    errorDiv.textContent = message;
+    errorDiv.classList.add('show');
+    showResult(false);
+}
+
+function hideError() {
+    document.getElementById('error').classList.remove('show');
+}
+
+function formatTimestamp(timestamp) {
+    const now = Date.now();
+    const diffInSeconds = Math.floor((now - timestamp) / 1000);
+    
+    if (diffInSeconds < 60) {
+        return 'الآن';
+    } else if (diffInSeconds < 3600) {
+        const minutes = Math.floor(diffInSeconds / 60);
+        return `منذ ${minutes} دقيقة`;
+    } else if (diffInSeconds < 86400) {
+        const hours = Math.floor(diffInSeconds / 3600);
+        return `منذ ${hours} ساعة`;
+    } else {
+        const days = Math.floor(diffInSeconds / 86400);
+        return `منذ ${days} يوم`;
+    }
+}
+
+function showNotification(message) {
+    const notification = document.createElement('div');
+    notification.className = 'notification';
+    notification.textContent = message;
+    document.body.appendChild(notification);
+    
+    setTimeout(() => {
+        notification.remove();
+    }, 3000);
+}
+
+// Initialize App
+// Function to update remaining attempts display
+function updateRemainingAttempts() {
+    const remaining = apiUsage.getRemaining();
+    const attemptsDiv = document.getElementById('remaining-attempts');
+    if (remaining < apiUsage.requestLimit) {
+        const timeUntilReset = apiUsage.getTimeUntilReset();
+        const minutes = Math.floor(timeUntilReset / 60);
+        const seconds = timeUntilReset % 60;
+        attemptsDiv.innerHTML = `المحاولات المتبقية: ${remaining} (تجديد بعد ${minutes} دقيقة ${seconds > 0 ? `و ${seconds} ثانية` : ''})`;
+    } else {
+        attemptsDiv.innerHTML = `المحاولات المتبقية: ${remaining}`;
+    }
+    
+    // Update every second when countdown is active
+    if (remaining < apiUsage.requestLimit) {
+        setTimeout(updateRemainingAttempts, 1000);
+    }
+}
+
+function openInGoogleMaps() {
+    const wilaya1 = wilaya1Select.value;
+    const wilaya2 = wilaya2Select.value;
+    
+    if (!wilaya1 || !wilaya2) {
+        showNotification('يرجى اختيار ولايتين أولاً');
+        return;
+    }
+
+    const start = wilayaData[wilaya1].coordinates;
+    const end = wilayaData[wilaya2].coordinates;
+    
+    const url = `https://www.google.com/maps/dir/?api=1&origin=${start[0]},${start[1]}&destination=${end[0]},${end[1]}&travelmode=driving`;
+    window.open(url, '_blank');
+}
+
+document.getElementById('share-button')?.addEventListener('click', handleShare);
+document.getElementById('print-button')?.addEventListener('click', () => window.print());
+
+document.getElem
+
+function initializeApp() {
+    apiUsage.init();
+    distanceCache.init();
+    
+    // Add remaining attempts display
+    const formDiv = document.getElementById('distance-form');
+    const attemptsDiv = document.createElement('div');
+    attemptsDiv.id = 'remaining-attempts';
+    attemptsDiv.className = 'attempts-display';
+    formDiv.insertAdjacentElement('afterend', attemptsDiv);
+    
+    // Add styles for the attempts display
+    const styles = document.createElement('style');
+    styles.textContent = `
+        .attempts-display {
+            text-align: center;
+            margin: 10px 0;
+            padding: 8px;
+            background: rgba(0, 0, 0, 0.05);
+            border-radius: 4px;
+            font-size: 0.9em;
+            color: var(--text-secondary);
+        }
+    `;
+    document.head.appendChild(styles);
+    
+    // Initial update of attempts display
+    updateRemainingAttempts();
+
+    const wilayas = Object.keys(wilayaData);
+    const fragment1 = document.createDocumentFragment();
+    const fragment2 = document.createDocumentFragment();
+
+    wilayas.forEach(wilaya => {
+        const option1 = new Option(wilaya, wilaya);
+        const option2 = new Option(wilaya, wilaya);
+        fragment1.appendChild(option1);
+        fragment2.appendChild(option2);
+    });
+
+    wilaya1Select.appendChild(fragment1);
+    wilaya2Select.appendChild(fragment2);
+
+    recentSearches.updateUI();
+    savedRoutes.updateUI();
+
+    const remaining = apiUsage.getRemaining();
+    if (remaining < 3) {
+        const timeUntilReset = apiUsage.getTimeUntilReset();
+        const minutes = Math.floor(timeUntilReset / 60);
+        showNotification(`تبقى ${remaining} طلبات فقط. سيتم تجديد الطلبات بعد ${minutes} دقيقة`);
+    }
+
+    if (!navigator.onLine) {
+        document.getElementById('offline-notice').hidden = false;
+    }
+}
+
+// Event Listeners
+document.addEventListener('DOMContentLoaded', initializeApp);
+
+const wilaya1Select = document.getElementById('wilaya1');
+const wilaya2Select = document.getElementById('wilaya2');
+
+wilaya1Select.addEventListener('change', handleRouteUpdate);
+wilaya2Select.addEventListener('change', handleRouteUpdate);
+
+document.addEventListener('click', (e) => {
+    if (e.target.closest('.recent-item')) {
+        const item = e.target.closest('.recent-item');
+        const fromWilaya = item.dataset.from;
+        const toWilaya = item.dataset.to;
+        
+        wilaya1Select.value = fromWilaya;
+        wilaya2Select.value = toWilaya;
+        handleRouteUpdate();
+    }
+
+    if (e.target.closest('.route-item') && !e.target.classList.contains('remove-saved')) {
+        const item = e.target.closest('.route-item');
+        const fromWilaya = item.dataset.from;
+        const toWilaya = item.dataset.to;
+        
+        wilaya1Select.value = fromWilaya;
+        wilaya2Select.value = toWilaya;
+        handleRouteUpdate();
+    }
+
+    if (e.target.classList.contains('remove-saved')) {
+        const item = e.target.closest('.route-item');
+        const fromWilaya = item.dataset.from;
+        const toWilaya = item.dataset.to;
+        
+        savedRoutes.toggle(fromWilaya, toWilaya);
+        showNotification('تم إزالة المسار من المحفوظات');
+    }
+});
+
+document.getElementById('swap-button').addEventListener('click', () => {
+    const temp = wilaya1Select.value;
+    wilaya1Select.value = wilaya2Select.value;
+    wilaya2Select.value = temp;
+    if (wilaya1Select.value && wilaya2Select.value) {
+        handleRouteUpdate();
+    }
+});
+
+document.getElementById('share-button')?.addEventListener('click', handleShare);
+document.getElementById('print-button')?.addEventListener('click', () => window.print());
+
+// Function to show the map container
+function showMapContainer() {
+    const mapContainer = document.getElementById('map-container');
+    mapContainer.style.display = 'block';
+}
+
+// Function to create and insert the map iframe
+function createMapIframe(wilaya1, wilaya2) {
+    const mapFrameContainer = document.getElementById('map-frame-container');
+    mapFrameContainer.innerHTML = '<div class="text-center p-5">جاري تحميل الخريطة...</div>';
+    
+    try {
+        // Get coordinates for both wilayas
+        const coords1 = wilayaData[wilaya1].coordinates;
+        const coords2 = wilayaData[wilaya2].coordinates;
+
+        // Input validation
+        if (!coords1 || !coords2) {
+            throw new Error('إحداثيات غير صالحة');
+        }
+
+        // Prepare coordinates in the correct format [longitude, latitude]
+        const start = [coords1[1], coords1[0]];
+        const end = [coords2[1], coords2[0]];
+
+        // Calculate bounding box
+        let minLat = Math.min(coords1[0], coords2[0]);
+        let maxLat = Math.max(coords1[0], coords2[0]);
+        let minLon = Math.min(coords1[1], coords2[1]);
+        let maxLon = Math.max(coords1[1], coords2[1]);
+
+        // Add padding (20% for better visibility)
+        const latDiff = maxLat - minLat;
+        const lonDiff = maxLon - minLon;
+        const latPadding = latDiff * 0.2;
+        const lonPadding = lonDiff * 0.2;
+
+        const bbox = [
+            minLon - lonPadding,
+            minLat - latPadding,
+            maxLon + lonPadding,
+            maxLat + latPadding
+        ].join(',');
+
+        // Create route URL using OSRM demo server
+        const routeUrl = `https://router.project-osrm.org/route/v1/driving/${start.join(',')};${end.join(',')}?overview=full&geometries=geojson`;
+
+        // Fetch route data
+        fetch(routeUrl)
+            .then(response => response.json())
+            .then(data => {
+                if (data.routes && data.routes[0]) {
+                    const route = data.routes[0].geometry.coordinates;
+                    
+                    // Create a new map container for Leaflet
+                    mapFrameContainer.innerHTML = `
+                        ${createRouteInfoTable(wilaya1, wilaya2)}
+                        <div id="map" style="height: 450px; border-radius: 8px;"></div>
+                    `;
+
+                    // Initialize Leaflet map
+                    const map = L.map('map').fitBounds([
+                        [minLat - latPadding, minLon - lonPadding],
+                        [maxLat + latPadding, maxLon + lonPadding]
+                    ]);
+
+                    // Add OpenStreetMap tiles
+                    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                        attribution: '© OpenStreetMap contributors'
+                    }).addTo(map);
+
+                    // Add markers
+                    L.marker([coords1[0], coords1[1]]).addTo(map)
+                        .bindPopup(wilaya1);
+                    L.marker([coords2[0], coords2[1]]).addTo(map)
+                        .bindPopup(wilaya2);
+            map.on('load', function() {
+                setTimeout(() => {
+                    map.invalidateSize();
+                }, 100);
+            });
+
+            window.addEventListener('resize', () => {
+                map.invalidateSize();
+            });
+                    // Draw route
+                    L.polyline(route.map(coord => [coord[1], coord[0]]), {
+                        color: '#0078A8',
+                        weight: 4,
+                        opacity: 0.7
+                    }).addTo(map);
+
+                    // Add external links
+                    addExternalLinks(mapFrameContainer, bbox, coords1, coords2);
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching route:', error);
+                showError(mapFrameContainer, error);
+            });
+
+    } catch (error) {
+        console.error('Error creating map:', error);
+        showError(mapFrameContainer, error);
+    }
+}
+
+// Helper function to create route info table
+function createRouteInfoTable(wilaya1, wilaya2) {
+    return `
+        <div class="route-info-table" dir="rtl" style="margin-bottom: 16px; text-align: right;">
+            <h4 style="margin-bottom: 8px;">معلومات المسار:</h4>
+            <table style="width: 100%; border-collapse: collapse;">
+                <tr>
+                    <td style="padding: 8px; border: 1px solid #ddd; background: #f9f9f9;">نقطة الانطلاق:</td>
+                    <td style="padding: 8px; border: 1px solid #ddd;">${wilaya1}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border: 1px solid #ddd; background: #f9f9f9;">نقطة الوصول:</td>
+                    <td style="padding: 8px; border: 1px solid #ddd;">${wilaya2}</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border: 1px solid #ddd; background: #f9f9f9;">المسافة التقريبية:</td>
+                    <td style="padding: 8px; border: 1px solid #ddd;">${document.getElementById('distance-value').textContent} كم</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; border: 1px solid #ddd; background: #f9f9f9;">الوقت التقريبي:</td>
+                    <td style="padding: 8px; border: 1px solid #ddd;">${document.getElementById('time-value').textContent}</td>
+                </tr>
+            </table>
+        </div>
+    `;
+}
+
+// Helper function to add external links
+function addExternalLinks(container, bbox, coords1, coords2) {
+    const links = `
+        <div style="text-align: right; margin-top: 8px;">
+            <a href="https://www.openstreetmap.org/?bbox=${bbox}&layer=mapnik" 
+               target="_blank" 
+               style="color: #0078A8; text-decoration: none;">
+               👁️ عرض على OpenStreetMap
+            </a>
+        </div>
+        <div style="text-align: right; margin-top: 8px;">
+            <a href="https://www.google.com/maps/dir/${coords1[0]},${coords1[1]}/${coords2[0]},${coords2[1]}" 
+               target="_blank" 
+               style="color: #0078A8; text-decoration: none;">
+               🗺️ عرض في خرائط Google
+            </a>
+        </div>
+    `;
+    container.insertAdjacentHTML('beforeend', links);
+}
+
+// Helper function to show errors
+function showError(container, error) {
+    container.innerHTML = `
+        <div style="text-align: center; padding: 20px;">
+            <p style="color: red; margin-bottom: 10px;">عذراً، حدث خطأ أثناء تحميل الخريطة.</p>
+            <p style="margin-bottom: 10px;">الرجاء المحاولة مرة أخرى لاحقاً.</p>
+            <p style="color: #666; font-size: 0.9em;">${error.message}</p>
+        </div>
+    `;
+}
+
+// Helper function to calculate bounding box
+function calculateBoundingBox(coordinates) {
+    let minLon = Infinity;
+    let maxLon = -Infinity;
+    let minLat = Infinity;
+    let maxLat = -Infinity;
+
+    coordinates.forEach(coord => {
+        minLon = Math.min(minLon, coord[0]);
+        maxLon = Math.max(maxLon, coord[0]);
+        minLat = Math.min(minLat, coord[1]);
+        maxLat = Math.max(maxLat, coord[1]);
+    });
+
+    // Add padding (10%)
+    const lonPadding = (maxLon - minLon) * 0.1;
+    const latPadding = (maxLat - minLat) * 0.1;
+
+    return `${minLon-lonPadding},${minLat-latPadding},${maxLon+lonPadding},${maxLat+latPadding}`;
+}
+
+// Update map button event listener
+document.getElementById('map-button')?.addEventListener('click', () => {
+    const wilaya1 = wilaya1Select.value;
+    const wilaya2 = wilaya2Select.value;
+    
+    if (!wilaya1 || !wilaya2) {
+        showNotification('يرجى اختيار ولايتين أولاً');
+        return;
+    }
+    
+    if (wilaya1 === wilaya2) {
+        showNotification('يرجى اختيار ولايتين مختلفتين');
+        return;
+    }
+    
+    showMapContainer();
+    createMapIframe(wilaya1, wilaya2);
+});
+
+// Close map button event listener
+document.getElementById('close-map')?.addEventListener('click', () => {
+    const mapContainer = document.getElementById('map-container');
+    mapContainer.style.display = 'none';
+});
+
+// Helper function to calculate bounding box
+function calculateBoundingBox(coordinates) {
+    let minLon = Infinity;
+    let maxLon = -Infinity;
+    let minLat = Infinity;
+    let maxLat = -Infinity;
+
+    coordinates.forEach(coord => {
+        minLon = Math.min(minLon, coord[0]);
+        maxLon = Math.max(maxLon, coord[0]);
+        minLat = Math.min(minLat, coord[1]);
+        maxLat = Math.max(maxLat, coord[1]);
+    });
+
+    const padding = 0.1;
+    return `${minLon-padding},${minLat-padding},${maxLon+padding},${maxLat+padding}`;
+}
+document.getElementById('save-button')?.addEventListener('click', () => {
+    const wilaya1 = wilaya1Select.value;
+    const wilaya2 = wilaya2Select.value;
+    const distance = parseInt(document.getElementById('distance-value').textContent);
+    
+    if (wilaya1 && wilaya2 && distance) {
+        const isSaved = savedRoutes.toggle(wilaya1, wilaya2, distance);
+        showNotification(isSaved ? 'تم حفظ المسار' : 'تم إزالة المسار من المحفوظات');
+    }
+});
+
+// Handle offline/online status
+window.addEventListener('online', () => {
+    document.getElementById('offline-notice').hidden = true;
+    showNotification('تم استعادة الاتصال بالإنترنت');
+});
+
+window.addEventListener('offline', () => {
+    document.getElementById('offline-notice').hidden = false;
+    showNotification('أنت الآن في وضع غير متصل');
+});
+
+// Add notification styles if not already in CSS
+const notificationStyles = `
+.notification {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    z-index: 1000;
+    animation: fadeInOut 3s ease;
+}
+
+@keyframes fadeInOut {
+    0% { opacity: 0; transform: translate(-50%, 20px); }
+    15% { opacity: 1; transform: translate(-50%, 0); }
+    85% { opacity: 1; transform: translate(-50%, 0); }
+    100% { opacity: 0; transform: translate(-50%, -20px); }
+}
+`;
+
+// Add notification styles to document
+if (!document.getElementById('notification-styles')) {
+    const styleSheet = document.createElement('style');
+    styleSheet.id = 'notification-styles';
+    styleSheet.textContent = notificationStyles;
+    document.head.appendChild(styleSheet);
+}

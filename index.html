@@ -14,6 +14,8 @@
     <link rel="icon" type="image/png" href="favicon.png">
     <link rel="apple-touch-icon" href="icons/icon-152x152.png">
     
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+	
     <!-- Main Stylesheet -->
     <link rel="stylesheet" href="styles.css">
     
@@ -104,7 +106,16 @@
                     <p class="note">* المسافة و الأسعار التقريبية عبر الطرق الرئيسية</p>
                 </div>
             </section>
-
+<!-- Map Section -->
+<section id="map-container" class="map-section" style="display: none;">
+    <div class="map-header">
+        <h3>خريطة المسار</h3>
+        <button id="close-map" class="close-map-btn" aria-label="إغلاق الخريطة">×</button>
+    </div>
+    <div id="map-frame-container" class="map-frame-container">
+        <!-- Map iframe will be inserted here by JavaScript -->
+    </div>
+</section>
             <!-- Recent Searches Section -->
             <section id="recent-searches" class="recent-searches" aria-label="عمليات البحث الأخيرة">
                 <!-- Will be populated by JavaScript -->
@@ -157,6 +168,9 @@
 	
     <script src="wilayaData.js"></script>
     <script src="utils.js" type="module"></script>
-    <script src="app.js"></script>
+    <script src="app.js?v=1.1"></script>
+	
+	<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+	
 </body>
 </html>

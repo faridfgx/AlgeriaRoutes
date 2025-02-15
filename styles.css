@@ -685,3 +685,41 @@ select {
         padding-left: 2rem !important;
     }
 }
+.map-section {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    max-width: 800px;
+    max-height: 90vh;  /* Add this to prevent overflow */
+    overflow: auto;    /* Add this to handle content overflow */
+    background: white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+
+.map-frame-container {
+    padding: 20px;
+    height: calc(100% - 40px); /* Account for padding */
+}
+
+#map {
+    height: 450px !important;
+    width: 100% !important;
+    position: relative !important;
+    z-index: 1;  /* Ensure map stays below close button */
+}
+
+.close-map-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    z-index: 2;  /* Ensure button stays above map */
+}
+
+/* Prevent map interaction from affecting container */
+.leaflet-container {
+    touch-action: none;
+}
