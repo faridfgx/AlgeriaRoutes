@@ -458,6 +458,7 @@ function formatTimestamp(timestamp) {
     }
 }
 
+// Function to show notifications
 function showNotification(message) {
     const notification = document.createElement('div');
     notification.className = 'notification';
@@ -468,24 +469,29 @@ function showNotification(message) {
         notification.remove();
     }, 3000);
 }
-
-// Initialize App
 // Function to update remaining attempts display
 function updateRemainingAttempts() {
     const remaining = apiUsage.getRemaining();
     const attemptsDiv = document.getElementById('remaining-attempts');
+    
     if (remaining < apiUsage.requestLimit) {
         const timeUntilReset = apiUsage.getTimeUntilReset();
         const minutes = Math.floor(timeUntilReset / 60);
         const seconds = timeUntilReset % 60;
-        attemptsDiv.innerHTML = `المحاولات المتبقية: ${remaining} (تجديد بعد ${minutes} دقيقة ${seconds > 0 ? `و ${seconds} ثانية` : ''})`;
+        attemptsDiv.innerHTML = `
+            <div class="attempts-display">
+                المحاولات المتبقية: ${remaining}
+                <span class="reset-time">
+                    (تجديد بعد ${minutes} دقيقة ${seconds > 0 ? `و ${seconds} ثانية` : ''})
+                </span>
+            </div>
+        `;
     } else {
-        attemptsDiv.innerHTML = `المحاولات المتبقية: ${remaining}`;
-    }
-    
-    // Update every second when countdown is active
-    if (remaining < apiUsage.requestLimit) {
-        setTimeout(updateRemainingAttempts, 1000);
+        attemptsDiv.innerHTML = `
+            <div class="attempts-display">
+                المحاولات المتبقية: ${remaining}
+            </div>
+        `;
     }
 }
 
@@ -726,91 +732,48 @@ function createMapIframe(wilaya1, wilaya2) {
         showError(mapFrameContainer, error);
     }
 }
-
 // Helper function to create route info table
 function createRouteInfoTable(wilaya1, wilaya2) {
     return `
-        <div class="route-info-table" dir="rtl" style="margin-bottom: 16px; text-align: right;">
-            <h4 style="margin-bottom: 8px;">معلومات المسار:</h4>
-            <table style="width: 100%; border-collapse: collapse;">
-                <tr>
-                    <td style="padding: 8px; border: 1px solid #ddd; background: #f9f9f9;">نقطة الانطلاق:</td>
-                    <td style="padding: 8px; border: 1px solid #ddd;">${wilaya1}</td>
-                </tr>
-                <tr>
-                    <td style="padding: 8px; border: 1px solid #ddd; background: #f9f9f9;">نقطة الوصول:</td>
-                    <td style="padding: 8px; border: 1px solid #ddd;">${wilaya2}</td>
-                </tr>
-                <tr>
-                    <td style="padding: 8px; border: 1px solid #ddd; background: #f9f9f9;">المسافة التقريبية:</td>
-                    <td style="padding: 8px; border: 1px solid #ddd;">${document.getElementById('distance-value').textContent} كم</td>
-                </tr>
-                <tr>
-                    <td style="padding: 8px; border: 1px solid #ddd; background: #f9f9f9;">الوقت التقريبي:</td>
-                    <td style="padding: 8px; border: 1px solid #ddd;">${document.getElementById('time-value').textContent}</td>
-                </tr>
-            </table>
+        <div class="result-section" dir="rtl">
+            <h3 class="result-title">معلومات المسار</h3>
+            <div class="price-info">
+                <div class="price-row">
+                    <span>نقطة الانطلاق:</span>
+                    <strong>${wilaya1}</strong>
+                </div>
+                <div class="price-row">
+                    <span>نقطة الوصول:</span>
+                    <strong>${wilaya2}</strong>
+                </div>
+                <div class="price-row">
+                    <span>المسافة التقريبية:</span>
+                    <strong>${document.getElementById('distance-value').textContent} كم</strong>
+                </div>
+                <div class="price-row">
+                    <span>الوقت التقريبي:</span>
+                    <strong>${document.getElementById('time-value').textContent}</strong>
+                </div>
+            </div>
         </div>
     `;
 }
-
 // Helper function to add external links
 function addExternalLinks(container, bbox, coords1, coords2) {
     const links = `
-<div style="
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 10px;
-    margin-top: 12px;
-    width: 100%;
-    text-align: right !important;
-">
-    <a href="https://www.openstreetmap.org/?bbox=${bbox}&layer=mapnik" 
-       target="_blank" 
-       style="
-           display: inline-block !important;
-           text-align: right !important;
-           padding: 10px 16px;
-           background-color: #f0f8ff;
-           color: #0078A8;
-           text-decoration: none;
-           font-weight: bold;
-           border-radius: 6px;
-           transition: background-color 0.3s, transform 0.2s;
-           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-           width: fit-content;
-           direction: rtl;
-           margin-left: auto !important;
-       "
-       onmouseover="this.style.backgroundColor='#e6f4ff'; this.style.transform='scale(1.05)';"
-       onmouseout="this.style.backgroundColor='#f0f8ff'; this.style.transform='scale(1)';">
-       👁️ عرض على OpenStreetMap
-    </a>
+        <div class="actions" dir="rtl">
+            <a href="https://www.openstreetmap.org/?bbox=${bbox}&layer=mapnik" 
+               target="_blank" 
+               class="action-button">
+               👁️ عرض على OpenStreetMap
+            </a>
 
-    <a href="https://www.google.com/maps/dir/${coords1[0]},${coords1[1]}/${coords2[0]},${coords2[1]}" 
-       target="_blank" 
-       style="
-           display: inline-block !important;
-           text-align: right !important;
-           padding: 10px 16px;
-           background-color: #f0f8ff;
-           color: #0078A8;
-           text-decoration: none;
-           font-weight: bold;
-           border-radius: 6px;
-           transition: background-color 0.3s, transform 0.2s;
-           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-           width: fit-content;
-           direction: rtl;
-           margin-left: auto !important;
-       "
-       onmouseover="this.style.backgroundColor='#e6f4ff'; this.style.transform='scale(1.05)';"
-       onmouseout="this.style.backgroundColor='#f0f8ff'; this.style.transform='scale(1)';">
-       🗺️ عرض في خرائط Google
-    </a>
-</div>
-
+            <a href="https://www.google.com/maps/dir/${coords1[0]},${coords1[1]}/${coords2[0]},${coords2[1]}" 
+               target="_blank" 
+               class="action-button">
+               🗺️ عرض في خرائط Google
+            </a>
+        </div>
     `;
     container.insertAdjacentHTML('beforeend', links);
 }
@@ -818,10 +781,10 @@ function addExternalLinks(container, bbox, coords1, coords2) {
 // Helper function to show errors
 function showError(container, error) {
     container.innerHTML = `
-        <div style="text-align: center; padding: 20px;">
-            <p style="color: red; margin-bottom: 10px;">عذراً، حدث خطأ أثناء تحميل الخريطة.</p>
-            <p style="margin-bottom: 10px;">الرجاء المحاولة مرة أخرى لاحقاً.</p>
-            <p style="color: #666; font-size: 0.9em;">${error.message}</p>
+        <div class="error show">
+            <p>عذراً، حدث خطأ أثناء تحميل الخريطة.</p>
+            <p>الرجاء المحاولة مرة أخرى لاحقاً.</p>
+            <p class="error-details">${error.message}</p>
         </div>
     `;
 }
@@ -941,3 +904,73 @@ if (!document.getElementById('notification-styles')) {
     styleSheet.textContent = notificationStyles;
     document.head.appendChild(styleSheet);
 }
+
+const newStyles = `
+<style>
+/* Center text in table cells */
+.text-center {
+    text-align: center;
+}
+
+.price-row {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.result-title {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+}
+
+/* Close button styling */
+.close-map-btn, .remove-saved {
+    background: var(--primary-light);
+    border: none;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    transition: all var(--transition-speed);
+}
+
+.close-map-btn:hover, .remove-saved:hover {
+    background: var(--primary-color);
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Adjust the map header */
+.map-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: var(--primary-light);
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* Distance result styling */
+.distance-result {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.distance-result strong {
+    display: block;
+    margin-top: 0.5rem;
+    font-size: 2rem;
+}
+</style>
+`;
+
+// Add the styles to the document head
+document.head.insertAdjacentHTML('beforeend', newStyles);
