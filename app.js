@@ -405,7 +405,7 @@ function handleShare() {
     const wilaya2 = wilaya2Select.value;
     const distance = document.getElementById('distance-value').textContent;
     
-    const text = `المسافة بين ${wilaya1} و ${wilaya2} هي ${distance} كم`;
+    const text = ` المسافة بين ${wilaya1} &nbsp; و ${wilaya2} &nbsp;هي &nbsp;${distance} &nbsp;كم`;
     
     if (navigator.share) {
         navigator.share({
