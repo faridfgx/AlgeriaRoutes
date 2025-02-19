@@ -401,12 +401,12 @@ async function handleRouteUpdate() {
 }
 
 function handleShare() {
-    const wilaya1 = wilaya1Select.value;
-    const wilaya2 = wilaya2Select.value;
-    const distance = document.getElementById('distance-value').textContent;
-    
-    const text = ` المسافة بين ${wilaya1} &nbsp; و ${wilaya2} &nbsp;هي &nbsp;${distance} &nbsp;كم`;
-    
+    const wilaya1 = wilaya1Select.value.trim().replace(/\s+/g, ' ');
+    const wilaya2 = wilaya2Select.value.trim().replace(/\s+/g, ' ');
+    const distance = document.getElementById('distance-value').textContent.trim().replace(/\s+/g, ' ');
+
+    const text = `المسافة بين ${wilaya1} و ${wilaya2} هي: ${distance} كم`;
+
     if (navigator.share) {
         navigator.share({
             title: 'حاسبة المسافات بين الولايات',
@@ -419,6 +419,7 @@ function handleShare() {
             .catch(console.error);
     }
 }
+
 
 // Utility Functions
 function showLoading(show) {
@@ -760,24 +761,108 @@ function createRouteInfoTable(wilaya1, wilaya2) {
 }
 // Helper function to add external links
 function addExternalLinks(container, bbox, coords1, coords2) {
-    const links = `
-        <div class="actions" dir="rtl">
-            <a href="https://www.openstreetmap.org/?bbox=${bbox}&layer=mapnik" 
-               target="_blank" 
-               class="action-button">
-               👁️ عرض على OpenStreetMap
-            </a>
+    // Add styles if they don't exist
+    if (!document.getElementById('map-action-styles')) {
+        const styles = document.createElement('style');
+        styles.id = 'map-action-styles';
+        styles.textContent = `
+            .map-actions {
+                display: flex;
+                gap: 16px;
+                justify-content: center;
+                margin-top: 20px;
+                flex-wrap: wrap;
+                direction: rtl;
+            }
 
-            <a href="https://www.google.com/maps/dir/${coords1[0]},${coords1[1]}/${coords2[0]},${coords2[1]}" 
-               target="_blank" 
-               class="action-button">
-               🗺️ عرض في خرائط Google
-            </a>
-        </div>
+            .map-action-button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+                padding: 12px 24px;
+                border-radius: 8px;
+                font-size: 14px;
+                font-weight: 500;
+                text-decoration: none;
+                transition: all 0.2s ease;
+                border: 1px solid transparent;
+            }
+
+            .map-action-button:hover {
+                transform: translateY(-1px);
+            }
+
+            .map-action-button--primary {
+                background-color: #2563eb;
+                color: white;
+            }
+
+            .map-action-button--primary:hover {
+                background-color: #1d4ed8;
+                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            }
+
+            .map-action-button--secondary {
+                background-color: white;
+                color: #2563eb;
+                border-color: #e5e7eb;
+            }
+
+            .map-action-button--secondary:hover {
+                background-color: #f8fafc;
+                border-color: #2563eb;
+                box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            }
+
+            .map-action-icon {
+                width: 18px;
+                height: 18px;
+                display: inline-block;
+                vertical-align: middle;
+            }
+        `;
+        document.head.appendChild(styles);
+    }
+
+    // Create container div
+    const actionsDiv = document.createElement('div');
+    actionsDiv.className = 'map-actions';
+    
+    // Define icon SVGs
+    const icons = {
+        externalLink: `<svg class="map-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+        </svg>`,
+        map: `<svg class="map-action-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+            <circle cx="12" cy="10" r="3"></circle>
+        </svg>`
+    };
+
+    // Create and add the buttons
+    actionsDiv.innerHTML = `
+        <a href="https://www.openstreetmap.org/?bbox=${bbox}&layer=mapnik" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="map-action-button map-action-button--secondary">
+           ${icons.externalLink}
+           <span>عرض على OpenStreetMap</span>
+        </a>
+        <a href="https://www.google.com/maps/dir/${coords1[0]},${coords1[1]}/${coords2[0]},${coords2[1]}" 
+           target="_blank" 
+           rel="noopener noreferrer"
+           class="map-action-button map-action-button--primary">
+           ${icons.map}
+           <span>عرض في خرائط Google</span>
+        </a>
     `;
-    container.insertAdjacentHTML('beforeend', links);
-}
 
+    // Add to container
+    container.appendChild(actionsDiv);
+}
 // Helper function to show errors
 function showError(container, error) {
     container.innerHTML = `
