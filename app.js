@@ -844,7 +844,7 @@ function addExternalLinks(container, bbox, coords1, coords2) {
 
     // Create and add the buttons
     actionsDiv.innerHTML = `
-        <a href="https://www.openstreetmap.org/?bbox=${bbox}&layer=mapnik" 
+        <a href="https://www.openstreetmap.org/directions?from=${coords1[0]}%2C${coords1[1]}&to=${coords2[0]}%2C${coords2[1]}" 
            target="_blank" 
            rel="noopener noreferrer"
            class="map-action-button map-action-button--secondary">
